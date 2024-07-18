@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ "$UID" -ne 0 ]; then
+    sudo /usr/bin/4to6tunnelstop
+    exit $?
+fi
+
+source /etc/4to6tunnel/conf.sh
+
+ip addr del "$4TO6TUNNEL_IP4" dev ip4tunnel
+ip link set dev ip4tunnel down
+ip -6 tunnel del ip4tunnel
+
+exit 0

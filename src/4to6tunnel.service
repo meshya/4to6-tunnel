@@ -1,0 +1,12 @@
+[Unit]
+Description=ip4 over ip6 tunnel
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/4to6tunnelstart
+ExecStop=/usr/bin/4to6tunnelstop
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

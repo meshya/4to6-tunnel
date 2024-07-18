@@ -1,0 +1,5 @@
+#!/bin/bash
+export 4TO6TUNNEL_LOCAL=""
+export 4TO6TUNNEL_REMOTE=""
+export 4TO6TUNNEL_IP4=""
+export 4TO6TUNNEL_IP4NETMASK=""
