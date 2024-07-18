@@ -26,5 +26,4 @@ we gonna make a tunnel between this two node
 
 In fact ipv4 packets encodes in ipv6 packets and sends to network throw ipv6
 
-if any ip blocks it's be ipv6 and will replaces easy with another one
-
+if any ip blocks it's be ipv6 and will replaces easy with another one because ip6 is cheeper than ip4 at all
