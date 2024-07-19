@@ -15,10 +15,10 @@ rm source.tar.gz
 mv * source
 cd source/src
 
-echo "Enter local server ipv6: "
+echo "Enter local server ipv6: [E0] "
 read local_ip6
 
-echo "Enter remote server ipv6: (another server) "
+echo "Enter remote server ipv6: (another server) [E2] "
 read remote_ip6
 
 echo "Choose you virutal network ip4 and netmask"
@@ -26,7 +26,7 @@ echo "Suggested to use 192.168.1.1\24"
 echo "for one server and 192.168.1.2\24"
 echo "for another one,"
 echo "Enter your choose for current "
-echo "server : "
+echo "server : [E4] "
 IFS='\' read local_ip4 local_ip4netmask 
 
 conf="/etc/4to6tunnel/conf.sh"

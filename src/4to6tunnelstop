@@ -8,7 +8,7 @@ fi
 source /etc/4to6tunnel/conf.sh
 
 ip addr del "$4TO6TUNNEL_IP4" dev ip4tunnel
-ip link set dev ip4tunnel down
-ip -6 tunnel del ip4tunnel
+ip link set dev 4to6tunnel down
+ip -6 tunnel del 4to6tunnel
 
 exit 0
