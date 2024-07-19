@@ -115,3 +115,20 @@ Note: Use virtual IPs (192.168.x.x) instead of real IPs.
 ## Tip
 
 When using [Method 2](#use-xray-on-both-servers), consider adjusting routing rules and utilizing the [Iran Hosted Domain Project](https://github.com/bootmortis/iran-hosted-domains) to direct traffic for Iran-hosted websites and services, especially Shaparak and payment services, from an Iranian IP. This setup will prevent users from needing to toggle their proxies.
+
+
+## References
+
+1. [Linux document project - ip4 in ip6 tunneling](https://tldp.org/HOWTO/Linux+IPv6-HOWTO/ch10.html
+)
+
+2. [RFC2437](http://www.faqs.org/rfcs/rfc2473.html)
+
+
+<br>
+<br>
+<br>
+
+```
+Edited by chatgpt
+```
