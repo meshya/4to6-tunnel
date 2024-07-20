@@ -44,7 +44,7 @@ curl -s https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/instal
 #### Server B
 
 ```bash
-sudo curl -s https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh | sudo bash
+curl -s https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh | sudo bash
 ```
 
 | Field | Value |
