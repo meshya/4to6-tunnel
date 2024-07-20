@@ -71,9 +71,9 @@ ping 192.168.1.1
 
 If one of your servers is already using a 192.168.x.x network, you may need to use 172.16.x.x/12 (e.g., 172.16.0.1/12 and 172.16.0.2/12) instead. If you are unsure, open an issue and include the output of `ip addr`.
 
-## Configuration Options
+## Options for making a proxy
 
-There are three methods to configure the tunnel:
+There are three methods to make a proxy on this tunnel:
 
 1. IP/Port Forwarding
 2. Use Xray on Both Servers
