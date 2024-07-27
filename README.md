@@ -32,7 +32,7 @@ You will need two servers with IPv6 support.
 #### Server A
 
 ```bash
-curl -s https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh | sudo bash
+curl -o install.sh https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh; sudo bash install.sh; rm install.sh
 ```
 
 | Field | Value |
@@ -44,7 +44,7 @@ curl -s https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/instal
 #### Server B
 
 ```bash
-curl -s https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh | sudo bash
+curl -o install.sh https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh; sudo bash install.sh; rm install.sh
 ```
 
 | Field | Value |
