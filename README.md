@@ -112,6 +112,9 @@ While not recommended, you can use custom tunneling methods such as [Reverse TLS
 
 Note: Use virtual IPs (192.168.x.x) instead of real IPs.
 
+## Change settings
+Settings all stored in `/etc/4to6tunnel/conf.sh`
+
 ## Tip
 
 When using [Method 2](#use-xray-on-both-servers), consider adjusting routing rules and utilizing the [Iran Hosted Domain Project](https://github.com/bootmortis/iran-hosted-domains) to direct traffic for Iran-hosted websites and services, especially Shaparak and payment services, from an Iranian IP. This setup will prevent users from needing to toggle their proxies.
