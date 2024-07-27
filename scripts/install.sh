@@ -35,10 +35,10 @@ install -Dm 755 ./conf.sh "$conf"
 rm "$conf"
 
 echo "#!/bin/bash" > "$conf"
-echo "export 4TO6TUNNEL_LOCAL=""\"$local_ip6\"" >> "$conf"
-echo "export 4TO6TUNNEL_REMOTE=""\"$remote_ip6\"" >> "$conf"
-echo "export 4TO6TUNNEL_IP4=""\"$local_ip4\"" >> "$conf"
-echo "export 4TO6TUNNEL_IP4NETMASK=""\"$local_ip4netmask\"" >> "$conf"
+echo "export IP4TO6TUNNEL_LOCAL=""\"$local_ip6\"" >> "$conf"
+echo "export IP4TO6TUNNEL_REMOTE=""\"$remote_ip6\"" >> "$conf"
+echo "export IP4TO6TUNNEL_IP4=""\"$local_ip4\"" >> "$conf"
+echo "export IP4TO6TUNNEL_IP4NETMASK=""\"$local_ip4netmask\"" >> "$conf"
 
 install -m 755 ./4to6tunnelstart /usr/bin/4to6tunnelstart
 install -m 755 ./4to6tunnelstop /usr/bin/4to6tunnelstop
