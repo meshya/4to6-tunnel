@@ -22,12 +22,12 @@ echo "Enter remote server ipv6: (another server) [E2] "
 read remote_ip6
 
 echo "Choose you virutal network ip4 and netmask"
-echo "Suggested to use 192.168.1.1\24"
-echo "for one server and 192.168.1.2\24"
+echo "Suggested to use 192.168.1.1/24"
+echo "for one server and 192.168.1.2/24"
 echo "for another one,"
 echo "Enter your choose for current "
 echo "server : [E4] "
-IFS='\' read local_ip4 local_ip4netmask 
+IFS='/' read local_ip4 local_ip4netmask 
 
 conf="/etc/4to6tunnel/conf.sh"
 
