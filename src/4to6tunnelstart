@@ -7,8 +7,8 @@ fi
 
 source /etc/4to6tunnel/conf.sh
 
-ip -6 tunnel add 4to6tunnel mode ip4ip6 remote "$4TO6TUNNEL_REMOTE" local "$4TO6TUNNEL_LOCAL"
-ip addr add "$4TO6TUNNEL_IP4"/"$4TO6TUNNEL_IP4NETMASK" dev 4to6tunnel
+ip -6 tunnel add 4to6tunnel mode ip4ip6 remote "$IP4TO6TUNNEL_REMOTE" local "$IP4TO6TUNNEL_LOCAL"
+ip addr add "$IP4TO6TUNNEL_IP4"/"$IP4TO6TUNNEL_IP4NETMASK" dev 4to6tunnel
 ip link set dev 4to6tunnel up
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
