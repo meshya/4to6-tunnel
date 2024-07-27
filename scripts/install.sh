@@ -31,7 +31,7 @@ IFS='\' read local_ip4 local_ip4netmask
 
 conf="/etc/4to6tunnel/conf.sh"
 
-install -m 755 ./conf.sh $conf
+install -Dm 755 ./conf.sh "$conf"
 rm "$conf"
 
 echo "#!/bin/bash" > "$conf"
