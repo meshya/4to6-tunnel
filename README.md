@@ -52,7 +52,7 @@ You will need two servers with IPv6 support.
 #### Server A
 
 ```bash
-curl -o 6to4install.sh https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh; sudo bash 6to4install.sh; rm 6to4install.sh
+curl -o /tmp/4to6install.sh https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh; sudo bash /tmp/4to6install.sh; rm /tmp/4to6install.sh
 ```
 
 | Field | Value |
@@ -64,7 +64,7 @@ curl -o 6to4install.sh https://raw.githubusercontent.com/meshya/4to6-tunnel/main
 #### Server B
 
 ```bash
-curl -o 6to4install.sh https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh; sudo bash 6to4install.sh; rm 6to4install.sh
+curl -o /tmp/4to6install.sh https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/install.sh; sudo bash /tmp/4to6install.sh; rm /tmp/4to6install.sh
 ```
 
 | Field | Value |
