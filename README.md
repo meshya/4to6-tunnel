@@ -1,3 +1,23 @@
+- [4to6 Tunnel](#4to6-tunnel)
+  - [Technical Overview](#technical-overview)
+  - [How to Use](#how-to-use)
+      - [Server A](#server-a)
+      - [Server B](#server-b)
+  - [Testing](#testing)
+      - [On Server A](#on-server-a)
+      - [On Server B](#on-server-b)
+  - [Warning](#warning)
+  - [Options for making a proxy](#options-for-making-a-proxy)
+    - [IP/Port Forwarding](#ipport-forwarding)
+      - [Step 1: Server A](#step-1-server-a)
+      - [Step 2](#step-2)
+    - [Use Xray on Both Servers](#use-xray-on-both-servers)
+    - [Use Custom Tunneling Methods](#use-custom-tunneling-methods)
+  - [Tip](#tip)
+  - [Change settings](#change-settings)
+  - [Delete 4to6tunnel](#delete-4to6tunnel)
+  - [References](#references)
+
 # 4to6 Tunnel
 
 The 4to6 tunnel is similar to the 6to4 tunnel with the following advantages:
@@ -112,12 +132,23 @@ While not recommended, you can use custom tunneling methods such as [Reverse TLS
 
 Note: Use virtual IPs (192.168.x.x) instead of real IPs.
 
-## Change settings
-Settings all stored in `/etc/4to6tunnel/conf.sh`
-
 ## Tip
 
 When using [Method 2](#use-xray-on-both-servers), consider adjusting routing rules and utilizing the [Iran Hosted Domain Project](https://github.com/bootmortis/iran-hosted-domains) to direct traffic for Iran-hosted websites and services, especially Shaparak and payment services, from an Iranian IP. This setup will prevent users from needing to toggle their proxies.
+
+## Change settings
+
+You may need to change settings of tunnel for example in the case, one of your IP's changes
+
+For this reason edit `/etc/4to6tunnel/conf.sh`
+
+## Delete 4to6tunnel
+
+You may use this script
+
+```bash
+curl https://raw.githubusercontent.com/meshya/4to6-tunnel/main/scripts/uninstall.sh -o /tmp/uninstall4to6.sh && sudo bash /tmp/uninstall4to6.sh && rm /tmp/uninstall4to6.sh
+```
 
 
 ## References

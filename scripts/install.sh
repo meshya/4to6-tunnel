@@ -5,6 +5,8 @@ if [ "$UID" -ne 0 ]; then
     exit 0
 fi
 
+clear
+
 work_dir=$( mktemp -d )
 cd $work_dir
 source_url=$(curl -s https://api.github.com/repos/meshya/4to6-tunnel/releases/latest \
